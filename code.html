@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quote App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div class="container" id="loginBox">
+    <h2>📧 Login</h2>
+
+    <input type="email" id="email" placeholder="Enter Email">
+
+    <div class="password-box">
+        <input type="password" id="password" placeholder="Enter Password">
+        <span id="togglePassword">👁️</span>
+    </div>
+
+    <button id="loginBtn" class="new-quote-btn">Login</button>
+</div>
+
+<!-- WELCOME -->
+<div class="container hide" id="welcomeBox">
+    <h2>🎉 Welcome to Interesting Code</h2>
+    <p>Click below to explore amazing quotes</p>
+    <button id="startBtn" class="new-quote-btn">Start</button>
+</div>
+
+<!-- QUOTE APP -->
+<div class="container hide" id="quoteApp">
+    <h2>✨ Quote of the Moment</h2>
+
+    <div class="quote-box">
+        <p id="quote">Click below to generate a quote</p>
+        <span id="author"></span>
+    </div>
+
+    <div class="btn-group">
+        <button id="likeBtn">👍 Like</button>
+        <button id="saveBtn">❤️ Save</button>
+        <button id="copyBtn">📋 Copy</button>
+        <button id="shareBtn">🔗 Share</button>
+    </div>
+
+    <button id="newQuote" class="new-quote-btn">New Quote</button>
+</div>
+
+<script src="code.js"></script>
+</body>
+</html>
