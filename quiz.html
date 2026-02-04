@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro Quiz App</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- LOGIN PAGE -->
+  <section class="card login">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <div class="password-box">
+      <input type="password" id="password" placeholder="Password">
+      <span class="eye" onclick="togglePassword()">👁</span>
+    </div>
+    <div class="row">
+      <button type="button" onclick="editUser()">Edit</button>
+      <button type="button" onclick="removeUser()">Remove</button>
+    </div>
+    <button type="button" class="main" onclick="login()">Login</button>
+  </section>
+
+  <!-- WELCOME PAGE -->
+  <section class="card welcome hide">
+    <h1>Welcome to Quiz 🎉</h1>
+    <button type="button" class="main" onclick="goToSetup()">Continue</button>
+  </section>
+
+  <!-- SETUP PAGE -->
+  <section class="card setup hide">
+    <h2>Quiz Setup</h2>
+    <label>Category</label>
+    <select id="category">
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+    </select>
+
+    <label>Difficulty</label>
+    <select id="level">
+      <option>Easy</option>
+      <option>Medium</option>
+      <option>Hard</option>
+    </select>
+
+    <label>Number of Questions</label>
+    <select id="count">
+      <option>5</option>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+      <option>25</option>
+      <option>30</option>
+    </select>
+
+    <button type="button" class="main" onclick="startQuiz()">Submit</button>
+  </section>
+
+  <!-- QUIZ PAGE -->
+  <section class="card quiz hide">
+    <h3 id="question"></h3>
+    <div id="options"></div>
+    <button type="button" class="main" id="nextBtn" onclick="nextQuestion()" disabled>Next</button>
+  </section>
+
+  <!-- RESULT PAGE -->
+  <section class="card result hide">
+    <h1>Quiz Finished 🎯</h1>
+    <p id="finalScore"></p>
+    <button type="button" class="main" onclick="location.reload()">Restart</button>
+  </section>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
+
