@@ -1,0 +1,84 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.app{
+  width:350px;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.hide{ display:none; }
+
+input, select{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+}
+
+.password-box{
+  position:relative;
+}
+
+.eye{
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  cursor:pointer;
+}
+
+button{
+  padding:12px;
+  width:100%;
+  margin-top:10px;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+button.main{
+  background:#667eea;
+  color:#fff;
+}
+
+.row{
+  display:flex;
+  gap:10px;
+}
+
+.option{
+  padding:10px;
+  border:2px solid #667eea;
+  border-radius:6px;
+  margin:8px 0;
+  cursor:pointer;
+}
+
+.option.correct{
+  background:#4caf50;
+  color:#fff;
+}
+
+.option.wrong{
+  background:#f44336;
+  color:#fff;
+}
